@@ -1,0 +1,288 @@
+/* GitLab Auto Reviewers Extension Styles */
+
+.gitlab-auto-reviewers-container {
+  margin: 16px 0;
+  padding: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  background: #fafafa;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  container-type: inline-size;
+}
+
+.gitlab-auto-reviewers-header {
+  margin-bottom: 16px;
+}
+
+.gitlab-auto-reviewers-title-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.gitlab-auto-reviewers-icon {
+  border-radius: 4px;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
+}
+
+.gitlab-auto-reviewers-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #303030;
+}
+
+.gitlab-auto-reviewers-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.gitlab-auto-reviewers-add-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.gitlab-auto-reviewers-add-input {
+  padding: 8px 12px;
+  border: 1px solid #d4d4d5;
+  border-radius: 6px;
+  font-size: 13px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.gitlab-auto-reviewers-add-btn {
+  padding: 8px 12px;
+  background: #1f75cb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  min-width: 40px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gitlab-auto-reviewers-add-btn:hover {
+  background: #1068bf;
+}
+
+.gitlab-auto-reviewers-action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+
+
+.gitlab-auto-reviewers-title::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url('../../icons/icon32.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.gitlab-auto-reviewers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.gitlab-auto-reviewers-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #d4d4d5;
+  border-radius: 6px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  gap: 6px;
+  min-height: 36px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.gitlab-auto-reviewers-item:hover {
+  border-color: #1f75cb;
+  background: #f0f8ff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gitlab-auto-reviewers-item.selected {
+  border-color: #1f75cb;
+  background: rgba(31, 117, 203, 0.1);
+}
+
+.gitlab-auto-reviewers-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #303030;
+  cursor: pointer;
+}
+
+.gitlab-auto-reviewers-remove-btn {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin-left: 4px;
+  flex-shrink: 0;
+}
+
+.gitlab-auto-reviewers-remove-btn:hover {
+  color: #dc2626;
+  transform: scale(1.2);
+}
+
+.gitlab-auto-reviewers-button {
+  padding: 8px 16px;
+  border: 1px solid;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  position: relative;
+  outline: none;
+}
+
+.gitlab-auto-reviewers-button:focus {
+  box-shadow: 0 0 0 2px #1f75cb40;
+}
+
+.gitlab-auto-reviewers-button.primary {
+  background: #1f75cb;
+  border-color: #1f75cb;
+  color: #ffffff;
+}
+
+.gitlab-auto-reviewers-button.primary:hover:not(:disabled) {
+  background: #1068bf;
+  border-color: #1068bf;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(31, 117, 203, 0.3);
+}
+
+.gitlab-auto-reviewers-button.primary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.gitlab-auto-reviewers-button.primary:disabled {
+  background: #6b7280;
+  border-color: #6b7280;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.gitlab-auto-reviewers-button.secondary {
+  background: #ffffff;
+  border-color: #d4d4d5;
+  color: #303030;
+}
+
+.gitlab-auto-reviewers-button.secondary:hover {
+  border-color: #1f75cb;
+  color: #1f75cb;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gitlab-auto-reviewers-button.secondary:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .gitlab-auto-reviewers-container {
+    background: #2d2d30;
+    border-color: #404040;
+  }
+
+  .gitlab-auto-reviewers-title {
+    color: #e0e0e0;
+  }
+
+  .gitlab-auto-reviewers-item {
+    background: #3c3c3c;
+    border-color: #555555;
+  }
+
+  .gitlab-auto-reviewers-item:hover {
+    background: #4a4a4a;
+    border-color: #1f75cb;
+  }
+
+  .gitlab-auto-reviewers-item.selected {
+    background: #1e3a5f;
+    border-color: #1f75cb;
+  }
+
+  .gitlab-auto-reviewers-label {
+    color: #e0e0e0;
+  }
+
+  .gitlab-auto-reviewers-button.secondary {
+    background: #3c3c3c;
+    border-color: #555555;
+    color: #e0e0e0;
+  }
+
+  .gitlab-auto-reviewers-button.secondary:hover {
+    background: #4a4a4a;
+    border-color: #1f75cb;
+    color: #ffffff;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .gitlab-auto-reviewers-action-buttons {
+    flex-direction: column;
+  }
+  
+  .gitlab-auto-reviewers-button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .gitlab-auto-reviewers-item {
+    font-size: 12px;
+  }
+} 

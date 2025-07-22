@@ -5,7 +5,6 @@
   "description": "Automatically add selected reviewers to GitLab merge requests via checkboxes",
   "author": "Mohammad Sh",
   "permissions": [
-    "activeTab",
     "storage"
   ],
   "host_permissions": [

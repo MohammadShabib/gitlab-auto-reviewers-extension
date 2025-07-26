@@ -1,6 +1,9 @@
 # GitLab Reviewer Auto Add
 
-A Chrome extension that adds a checkbox interface to GitLab merge request pages for quickly selecting and adding reviewers.
+A Chrome extension that adds an interface to GitLab merge request pages for quickly selecting and adding reviewers.
+
+[![Chrome Web Store Badge](https://github.com/user-attachments/assets/cfe5693d-4772-4f39-9a82-f56322254c34)](https://chromewebstore.google.com/detail/gitlab-reviewer-auto-add/ojdagjoeaaooofmeofppefbnebclnmkh)
+
 
 ## Features
 
